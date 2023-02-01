@@ -1,7 +1,7 @@
 const Decrement = (props) => {
   return (
     <button
-      className="first"
+      className={props.counter <= 0 && "min"}
       onClick={() => {
         console.log("j'ai cliqué sur le -");
         props.setCounter(props.counter - 1);

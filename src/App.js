@@ -28,9 +28,14 @@ function App() {
 
           <Increment counter={counter} setCounter={setCounter} />
         </div>
-        <Reset counter={counter === 0} setCounter={setCounter} />
+        <Reset setCounter={setCounter} />
       </main>
-      <footer> Mage by Guillaume at Le Reacteur</footer>
+      <footer>
+        <p>
+          Made with <span> React </span> at <span> Le Reacteur </span> by{" "}
+          <span> Guillaume</span>
+        </p>
+      </footer>
     </div>
   );
 }

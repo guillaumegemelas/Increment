@@ -4,7 +4,7 @@ const Reset = (props) => {
       className="third"
       onClick={() => {
         console.log("j'ai cliqué sur reset");
-        props.setCounter(props.counter);
+        props.setCounter(0);
       }}
     >
       reset
