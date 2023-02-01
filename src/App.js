@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import logo from "../src/img/calc.png";
+import Increment from "./components/Increment";
+import Decrement from "./components/Decrement";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
+        <p>React counter</p>
       </header>
+      <main>
+        {" "}
+        <div className="col1">
+          <Increment />
+
+          <button
+            onClick={() => {
+              console.log("j'ai cliqué chef!");
+            }}
+          >
+            counter
+          </button>
+
+          <Decrement />
+        </div>
+      </main>
     </div>
   );
 }
