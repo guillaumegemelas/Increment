@@ -20,6 +20,7 @@ function App() {
       <main>
         {" "}
         <div className="col1">
+          {/* je passe en props counter et setcounter */}
           <Decrement counter={counter} setCounter={setCounter} />
 
           <button className="second">
